@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Login Form -->
+                <form id="login-form">
+                    <h2>Login</h2>
+                    <button type="button" onclick="loginWithGoogle()" class="btn btn-danger btn-lg btn-block">Login with Google</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <!-- Image Upload Form -->
+                <form id="upload-form">
+                    <h2>Image Upload</h2>
+                    <div class="form-group">
+                        <input type="file" name="image" class="form-control" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg btn-block">Upload Image</button>
+                </form>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <!-- Image Gallery -->
+                <h2>Image Gallery</h2>
+                <div id="image-gallery" class="row"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
